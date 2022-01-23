@@ -1,0 +1,10 @@
+.main-contact {
+    padding: 10rem 0;
+}
+.main-contact-text {
+    margin-bottom: 7rem;
+    color:#888;
+}
+.main-contact label {
+    @include visuallyhidden();
+}

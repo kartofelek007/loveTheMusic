@@ -1,0 +1,37 @@
+.main-parallax {
+	$c1: rgba(#222, 0.4);
+
+	height: 51rem;
+	background-image: linear-gradient($c1, $c1),
+		linear-gradient(90deg, rgba(#000, 0.6), rgba(#000, 0.1), rgba(#000, 0.6)),
+		url(../images/banner-paralax.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.main-parallax-title {
+	font-size: 6rem;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight:200;
+	margin: 0;
+	text-align: center;
+}
+
+.main-parallax-title span {
+	color: $color-main;
+
+}
+
+.main-parallax-text {
+	font-size:1.8rem;
+	color: rgba(white, 0.35);
+	text-align: center;
+	margin-top: 1.5rem;
+	max-width: 84rem;
+}

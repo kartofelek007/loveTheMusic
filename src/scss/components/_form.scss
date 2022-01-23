@@ -1,0 +1,68 @@
+.form {
+}
+
+.form-row {
+	margin-bottom: 2rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+	padding: 2rem;
+	border: 1px solid #C4C4C4;
+	font-family: $font-main;
+	border-radius: 0.7rem;
+	width: 100%;
+	max-width: 56rem;
+	transition: 0.3s all;
+
+	&:focus {
+		border-color: #333;
+		box-shadow: inset 0 0 0 1px #333;
+		outline: none;
+	}
+
+	&.field-error {
+		border-color: red;
+	}
+	&.field-error:focus {
+		border-color: red;
+		box-shadow: inset 0 0 0 1px red;
+	}
+}
+
+.form .form-error-text {
+	margin-top: 0.5rem;
+	color: red;
+}
+
+.form textarea {
+	max-width: 100%;
+	min-height: 15rem;
+	resize: vertical;
+}
+
+.form-row-last {
+	display: flex;
+	align-items: center;
+}
+
+.form-message {
+	margin-left: 2rem;
+	font-weight: bold;
+}
+
+.form-send-success {
+	border: 1px solid #ddd;
+	padding: 3rem;
+
+	strong {
+		font-size: 2rem;
+		display: block;
+		margin-bottom: 1rem;
+		color: $color-main;
+	}
+	span {
+		display: block;
+	}
+}
